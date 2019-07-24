@@ -1,0 +1,138 @@
+
+/*-------------HOME PAGE-------------*/
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.btn {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: lightskyblue;
+  height: 50px;
+  width : auto;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none ;
+  font-size: 1.5rem;
+}
+
+.red {
+  background : red;
+}
+
+/*------------RECEIPE ADD---------------*/
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  width: 20%;
+}
+
+
+/*--------RECIPES------------*/
+
+.recipes-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+
+}
+
+.all-recipes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  background-color: lightslategray;
+  justify-content: space-around;
+  width: 30%;
+  border: solid;
+
+}
+.each-recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: dotted;
+  width: 100%;
+}
+
+.end {
+  border-bottom: none;
+}
+
+/*--------EDIT----------*/
+
+.edit-button {
+  margin-left:20px; 
+  color: #fff;
+  text-decoration: none;
+  padding: 2px 4px;
+  background-color: grey;
+  border-radius: 6px;
+}
+
+#form {
+  margin: 30px auto;
+  width: 380px;
+}
+
+#form label {
+  color: #666;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#form input,
+#form button {
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: 0;
+  padding: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#form button {
+  background: #43a3e6;
+  border: 1px solid #43a3e6;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s ease background;
+  width: 100%;
+}
+
+#form button:hover {
+  background: #fff;
+  color: #43a3e6;
+  transition: .3s ease background;
+}

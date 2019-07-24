@@ -1,0 +1,19 @@
+
+<h1>All recipes stored</h1>
+
+<div class="recipes-container">
+  {{#each recipes}}
+  <div class="all-recipes">
+    <div class="each-recipe end">
+     <h2>Title :</h2> 
+        <a href="recipe/{{this._id}}">{{this.title}} </a> 
+    </div> 
+    
+    <p>
+        <a href="/recipe/edit?recipe_id={{this._id}}" class="edit-button">EDIT</a>
+    </p>
+        
+   
+  </div>
+  {{/each}}
+</div>

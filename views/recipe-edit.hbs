@@ -1,0 +1,33 @@
+  <h1>Edit Form</h1>
+  
+  <form action="/recipe/edit?recipe_id={{recipe._id}}" method="post">
+    <div class="flex-container">
+
+  <div class="flex-box">
+    <label for="">Title:</label>
+    <input type="text" name="title" value="{{recipe.title}}">
+  </div>
+  
+  <div class="flex-box">
+    <label for="">Level:</label>
+    <input type="text" name="level" value='{{recipe.level}}'>
+  </div>
+  
+  <div class="flex-box">
+    <label for="">Ingredients:</label>
+    <input type="Array" name="ingredients" value="{{recipe.ingredients}}">
+  </div>
+
+  <div class="flex-box">
+    <label for="">cuisine:</label>
+    <input type="string" name="cuisine" value="{{recipe.cuisine}}">
+  </div>
+  
+  <div class="flex-box">
+    <label for="">DishType:</label>
+    <input type="string" name="dishType" value="{{recipe.dishType}}">
+  </div>
+   
+  <button class="btn" type="submit">EDIT</button>
+  </form>
+</div>
