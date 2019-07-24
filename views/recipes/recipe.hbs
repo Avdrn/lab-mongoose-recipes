@@ -1,0 +1,34 @@
+<div class="flex-container">
+  <div class="flex-box">
+  <p>Title : {{recipe.title}}</p>
+  </div>
+  
+  <div class="flex-box">
+  <p>Level :{{recipe.level}}</p> 
+  </div>
+  
+  <div class="flex-box">
+  <p>Ingredients: {{recipe.ingredients}}</p>
+  </div>
+
+  <div class="flex-box">
+  <p>Cuisine:{{recipe.cuisine}}</p>
+  </div>
+  
+  <div class="flex-box">
+   <p>DishType: {{recipe.dishType}}</p> 
+  </div>
+
+</div>
+
+<div class="button">
+  <a href="/recipeEdit?recipe_id={{recipe._id}}" class="edit-button">EDIT</a>
+</div>
+
+<div class="button">
+  <a href="/recipeDelete?recipe_id={{recipe._id}}" class="delete-button">DELET</a>
+</div>
+
+<div class="button">
+  <button class="btn" ><a href="/recipes">View all your amazing recipes!</a></button>
+</div>
