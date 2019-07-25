@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 
 
 router.get('/:id', (req, res, next) => {
-  Recipes.findOneAndRemove(req.query.recipe_id)
+  Recipes.findByIdAndRemove(req.params.id)
   .then((recipe) => {
     console.log(recipe)
     res.redirect('/recipes');  

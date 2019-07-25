@@ -1,4 +1,6 @@
-
+body {
+  height: 100vh;
+}
 /*-------------HOME PAGE-------------*/
 
 .home {
@@ -6,6 +8,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-image: url("../Image/Home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
 }
 
 
@@ -27,6 +34,11 @@
 
 .red {
   background : red;
+}
+
+.home-buttons {
+  background-color: #16324F;
+  color: white;
 }
 
 /*------------RECEIPE ADD---------------*/
@@ -136,3 +148,39 @@
   color: #43a3e6;
   transition: .3s ease background;
 }
+
+/*--------ERROR MESS---------*/
+.error-message {
+  background: #F02B63;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+/*----NAVBAR----*/
+
+
+
+.navbar{
+  margin-top: 10px;
+  background-color: #13293D;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 6vh;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #2A628F;
+  padding: 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  border-radius: 10px;
+  align-items: center;
+}
+
+/*----home----*/

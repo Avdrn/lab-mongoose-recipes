@@ -1,3 +1,5 @@
+{{#if user}}
+  
   <h1>Edit Form</h1>
   
   <form action="/recipeEdit?recipe_id={{recipe._id}}" method="post">
@@ -31,3 +33,6 @@
   <button class="btn" type="submit">EDIT</button>
   </form>
 </div>
+
+{{/if}}
+
